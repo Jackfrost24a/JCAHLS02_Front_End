@@ -1,0 +1,57 @@
+* /*all selector, select all padding:0 dan margin:0 untuk me reset sendiri*/ {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#Navbar {
+    display: flex;
+    background-color: blueviolet;
+    padding: 2vh 1vh;
+}
+
+#nav-bar-left {
+    width: 75vw;
+    background-color: cornflowerblue;
+}
+
+#nav-bar-right {
+    width: 75vw;
+    background-color: darkorchid;
+}
+
+#nav-bar-left>ul,
+#nav-bar-right>ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 1vw;
+}
+
+#Banner {
+    height: 40vh;
+    background-color: deepskyblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#Content{
+    display: flex;
+    text-align: justify;
+    justify-content: space-evenly;
+}
+
+#Content>div {
+    padding: 2vh 1vw;
+    height: 25vh
+}
+
+#floating {
+    width: 50px;
+    height: 50px;
+    background-color: darkred;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+}

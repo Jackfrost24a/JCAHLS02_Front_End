@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Position</title>
+    <style>
+        .container {
+            width: 60vw;
+            /*mengikuti dari browser view width dari viewport VW=width VH=height*/
+            height: 60vh;
+            border: 2px solid blue;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .container>div {
+            width: 75px;
+            height: 75px;
+            border: 1px solid red;
+        }
+
+        #box1 {
+            background-color: aqua;
+            
+            
+        }
+        
+        #box2 {
+            background-color: green;
+            
+            /* position: relative; */
+            /*bisa atur posisinya*/
+            /* top: 10px; */
+            /*naik satu layer dan bergeser 10 pixel serta menumpuk box 3*/
+            /*dipakai untuk tidak mengganggu element lain top left right tidak akan berfungsi juga position tidak dipakai*/
+            /*position absolute menjadi browser nya sebagai element utamanya*/
+            /*fixed hampir sama dengan absolute namun dia tetap dimana kalau absolute ikut scrolling*/
+            
+        }
+        
+        #box3 {
+            
+            background-color: crimson;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">
+            <h3>Box1</h3>
+            
+        </div>
+        <div id="box2">
+            <h3>Box2</h3>
+            
+        </div>
+        <div id="box3">
+            <h3>Box3</h3>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
